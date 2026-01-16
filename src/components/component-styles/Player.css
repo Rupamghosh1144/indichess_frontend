@@ -1,0 +1,44 @@
+.player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #3b2f2f;  /* Dark background color */
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.player-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.player-name {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.piece-icon {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.player-country {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.player-timer {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #4CAF50;  /* Timer background color */
+  padding: 5px 10px;
+  border-radius: 5px;
+}

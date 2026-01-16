@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #3b2f2f; /* Dark background color */
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.left p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.right {
+  display: flex;
+  gap: 20px; /* Space between icons */
+}
+
+.right svg {
+  cursor: pointer; /* Add cursor pointer on icons */
+  transition: transform 0.3s ease; /* Smooth transition for icon interactions */
+}
+
+.right svg:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}

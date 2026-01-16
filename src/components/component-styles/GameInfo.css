@@ -1,0 +1,55 @@
+.game-info {
+  background-color: #3b2f2f;  /* Dark wood-like background */
+  color: white;
+  height: 40%;
+  width: 40%;  /* Adjust width as necessary */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.streak {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.streak p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.streak h3 {
+  font-size: 22px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.button {
+  background-color: #563636; /* Darker button background */
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #4f2f2f;  /* Hover effect */
+}
+
+.button svg {
+  margin-right: 10px; /* Adjust the space between the icon and text */
+}

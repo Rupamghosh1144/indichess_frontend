@@ -1,0 +1,328 @@
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #4CAF50;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.home-card{
+  max-width: 400px;
+}
+
+/* Styling the Login Card */
+.login-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-card .input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  font-size: 14px;
+  color: #555;
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.simple-auth-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 20px;
+}
+
+
+.simple-auth-btn:hover {
+  background-color: #45a049;
+}
+
+.oauth-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.oauth-buttons a {
+  text-decoration: none;
+}
+
+.oauth-buttons button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-google {
+  background-color: #db4437;
+  color: white;
+}
+
+.btn-google:hover {
+  background-color: #c1351d;
+}
+
+.btn-github {
+  background-color: #333;
+  color: white;
+}
+
+.btn-github:hover {
+  background-color: #1b1b1b;
+}
+
+.signup-link {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.signup-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.signup-card .input-group {
+  margin-bottom: 20px;
+}
+
+.login-link {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.login-link .btn-login {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-link .btn-login:hover {
+  background-color: #45a049;
+}
+
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);  /* 8 columns */
+  grid-template-rows: repeat(8, 1fr);  /* 8 rows */
+  width: 400px;  /* Width of the board */
+  height: 400px;  /* Height of the board */
+  border: 4px solid #333;  /* Border around the chessboard */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  /* Shadow for a 3D effect */
+  margin: 20px auto;  /* Center the board */
+}
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  transition: background-color 0.3s ease;  /* Smooth color transition */
+  cursor: pointer;
+}
+
+.square:hover {
+  background-color: #f1f1f1;  /* Light gray hover effect */
+}
+
+.white {
+  background-color: #f0d9b5;  /* Light tan for white squares */
+}
+
+.black {
+  background-color: #b58863;  /* Dark brown for black squares */
+}
+
+.piece {
+  font-size: 2rem;
+  user-select: none;  /* Prevent text selection on drag */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.piece:active {
+  transform: scale(1.2);  /* Slightly enlarge the piece when clicked */
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 20px;
+}
+
+.board {
+  width: 400px;
+  height: 400px;
+}
+
+.moves {
+  width: 250px;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.moves h2 {
+  text-align: center;
+}
+
+.moves ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.moves li {
+  padding: 5px;
+  font-family: 'Arial', sans-serif;
+  border-bottom: 1px solid #ccc;
+}
+
+.moves button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.moves button:hover {
+  background-color: #45a049;
+}
+
+.app-container
+{
+  display: flex;
+  width: 100vw;
+  flex: content;
+  /* align-items: flex-end; */
+    /* align-content: space-between;
+    justify-content: space-between;
+    justify-items: end; */
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.gameplay-container{
+  height: 100%;
+}
+
+.game-info-container{
+  height: 100%;
+  display: flex;
+  align-content: center;
+  align-items: center; 
+  justify-content: center;
+  justify-items: center ;
+}
+
+.game-container{
+  height: 100%;
+  display: flex;
+  
+  /* flex-wrap: wrap; */
+}
+
+.moves{
+  height: 40vh;
+  display: flex ;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.moves-container{
+  height: 100%;
+  padding-bottom: 50px;
+  display: flex ;
+  flex-direction: column;
+  align-items:  center;
+  justify-items: flex-start  ;
+  justify-content: space-between; 
+}
+
+
+
+
